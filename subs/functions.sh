@@ -1,5 +1,5 @@
 #
-# Display info level messages
+#
 #
 function info() {
     COLOR='\033[00;32m' # green
@@ -8,12 +8,10 @@ function info() {
 }
  
 #
-# Display colorized warning messages
+# Display colorized warning output
 #
 function warn() {
     COLOR='\033[00;31m' # red
     RESET='\033[00;00m' # white
     echo -e "${COLOR}[WARN] ${@}${RESET}"
 }
-
-# EOF
